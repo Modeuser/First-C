@@ -172,7 +172,106 @@
 //}
 
 ///* Build a better calculator*/
+//int main()
+//{
+//    double num1;
+//    double num2;
+//    double numf;
+//    char op;
+//
+//    printf("Please enter num1: ");
+//    scanf("%lf", &num1);
+//    printf("Please enter num2: ");
+//    scanf("%lf", &num2);
+//    printf("Please enter an operator");
+//    scanf(" %c", &op);
+//
+//    switch (op) {
+//    case ('+'):
+//        numf = num1 + num2;
+//        break;
+//    case ('-'):
+//        numf = num1 - num2;
+//        break;
+//    case ('/'):
+//        if (num2 == 0) {
+//            printf("cannot divide by 0");
+//            break;
+//        }
+//        numf = num1 / num2;
+//        break;
+//    case ('*'):
+//        numf = num1 * num2;
+//        break;
+//    default:
+//        printf("operator is not valid");
+//    }
+//
+//    printf("The answer is: %lf", numf);
+//
+//    return 0;
+//}
+
+
+///* Structs*/
+///structs can act just like variables once they are instantiated
+//struct Student{
+//    char name[50];
+//    char major[50];
+//    int age;
+//    double gpa;
+//};
+//
+//int main()
+//{
+//    struct Student student1;
+//    student1.age = 22;
+//    student1.gpa = 3.2;
+//    strcpy( student1.name, "Jim");
+//    strcpy( student1.major, "Business");
+//
+//    return 0;
+//}
+
+///* While loop guessing game*/
+
+//int main()
+//{
+//    int secretnum = 15;
+//    int usernum;
+//    int exitcon = 1;
+//    do {
+//        printf("guess the random number!");
+//        scanf("%d", &usernum);
+//        if (usernum > secretnum) {
+//            printf("too big! \n");
+//        } else if(usernum < secretnum) {
+//            printf("too small \n");
+//        } else if (usernum == secretnum) {
+//            printf("correct! \n");
+//            exitcon = 0;
+//        }
+//    } while (exitcon);
+//
+//    return 0;
+//}
+
+///* 2D arrays and nested loops*/
+
 int main()
 {
+    // 3 items in the array, each item is an array of 2
+    int nums [3][2] = {
+                {1,2},
+                {3,4},
+                {5,6}
+    };
+    int i,j;
+    for (i = 0; i < 3; i++) {
+        for (j = 0; j < 2; j++){
+            printf("%d", nums[i][j]);
+        }
+    }
 
+    return 0;
 }
