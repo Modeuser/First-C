@@ -258,20 +258,76 @@
 
 ///* 2D arrays and nested loops*/
 
+//int main()
+//{
+//    // 3 items in the array, each item is an array of 2
+//    int nums [3][2] = {
+//                {1,2},
+//                {3,4},
+//                {5,6}
+//    };
+//    int i,j;
+//    for (i = 0; i < 3; i++) {
+//        for (j = 0; j < 2; j++){
+//            printf("%d", nums[i][j]);
+//        }
+//    }
+//
+//    return 0;
+//}
+
+///* Memory address*/
+//
+//int main()
+//{
+//    int age = 30;
+//    double gpa = 3.4;
+//    char grade = 'A';
+//
+//    printf("%p", &age);
+//
+//
+//    return 0;
+//}
+
+///* Working with pointers*/
+//
+//int main()
+//{
+//    int age = 30;
+//    int * pAge = &age;
+//    printf("age's memory address: %p\n", &age);
+//
+//
+//    return 0;
+//}
+
+///* Writing files*/
+
+//int main()
+//{
+//    FILE * fpointer = fopen("employees.txt", "w"); //replace "w" with "a" to append
+//
+//    // file pointer
+//    fprintf(fpointer, "Jim, Salesman\nPam, Receptionist\nOscar Accounting");
+//
+//    fprintf(fpointer, "\nKelly, Customer Service");
+//
+//    fclose(fpointer);
+//    return 0;
+//}
+
+///* Writing files*/
+
 int main()
 {
-    // 3 items in the array, each item is an array of 2
-    int nums [3][2] = {
-                {1,2},
-                {3,4},
-                {5,6}
-    };
-    int i,j;
-    for (i = 0; i < 3; i++) {
-        for (j = 0; j < 2; j++){
-            printf("%d", nums[i][j]);
-        }
-    }
+    char line[255];
 
+    FILE * fpointer = fopen("employees.txt", "r"); //replace "w" with "a" to append
+    //fgets (where to store, max size allowed to be read-in, which file?)
+    fgets(line, 255, fpointer);
+    printf("%s", line);
+
+    fclose(fpointer);
     return 0;
 }
