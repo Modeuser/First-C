@@ -1,5 +1,7 @@
 # depslib dependency file v1.0
-1660676908 source:e:\c projects\first-c\practic\main.c
+1660772768 source:e:\c projects\first-c\practic\main.c
 	<stdio.h>
 	<stdlib.h>
+	<string.h>
+	<errno.h>
 
