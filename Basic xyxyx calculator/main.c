@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <errno.h>
 
 int main()
 {
@@ -19,9 +20,12 @@ int main()
 
     double result;
 
+
+
     printf("Enter an operation xyxyx, where x is a number and y is a operator: ");
-    fgets(userInput, 20, stdin);
-    printf("%s", userInput);
+     if (!fgets(userInput, 20, stdin)) {
+        return 1;
+     }
 
     int i;
     // this "for" statement will find the first operator and id its location

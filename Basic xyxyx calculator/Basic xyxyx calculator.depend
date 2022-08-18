@@ -1,5 +1,6 @@
 # depslib dependency file v1.0
-1660773353 source:e:\c projects\first-c\basic xyxyx calculator\main.c
+1660781554 source:e:\c projects\first-c\basic xyxyx calculator\main.c
 	<stdio.h>
 	<stdlib.h>
+	<errno.h>
 
