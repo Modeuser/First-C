@@ -55,5 +55,4 @@ int main (int argc, char **argv)
         for (o = 0; o < buf_count; o++) {
             printf("%c", *buf++);
         }
-        printf("\n%d", sizeof(size_t));
 }
